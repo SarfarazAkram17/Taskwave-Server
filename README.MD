@@ -1,4 +1,4 @@
-# 🧠 TaskWave Server
+# TaskWave Server
 
 Backend API for **TaskWave**, a dynamic courier task management platform.  
 This server handles all task-related operations, including task creation, updates, bidding logic, and user-specific task retrieval.
@@ -17,20 +17,20 @@ This server handles all task-related operations, including task creation, update
 
 ## 🔗 Related Links
 
-- **Client Repository:** [TaskWave Client](https://github.com/SarfarazAkram17/TaskWave-Client)  
+- **Client Repository:** [https://github.com/SarfarazAkram17/TaskWave-Client](https://github.com/SarfarazAkram17/TaskWave-Client)
 - **Live Client Site:** [https://assignment-10-sarfaraz-akram.netlify.app](https://assignment-10-sarfaraz-akram.netlify.app)
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology      | Purpose                             |
-|-----------------|-----------------------------------|
-| Node.js         | Runtime environment                |
-| Express.js      | API server framework               |
-| MongoDB Atlas   | Cloud NoSQL database               |
-| dotenv          | Environment variable management    |
-| CORS            | Cross-Origin Resource Sharing      |
+| Technology    | Purpose                         |
+| ------------- | ------------------------------- |
+| Node.js       | Runtime environment             |
+| Express.js    | API server framework            |
+| MongoDB Atlas | Cloud NoSQL database            |
+| dotenv        | Environment variable management |
+| CORS          | Cross-Origin Resource Sharing   |
 
 ---
 
@@ -38,19 +38,19 @@ This server handles all task-related operations, including task creation, update
 
 ### Task Management
 
-| Method | Endpoint           | Description                       |
-|--------|--------------------|---------------------------------|
-| GET    | `/tasks`           | Retrieve all tasks               |
-| GET    | `/tasks/:id`       | Get a task by ID                 |
-| POST   | `/tasks`           | Create a new task                |
-| PUT    | `/tasks/:id`       | Update a task (or create if missing) |
-| DELETE | `/tasks/:id`       | Delete a task                   |
+| Method | Endpoint     | Description                          |
+| ------ | ------------ | ------------------------------------ |
+| GET    | `/tasks`     | Retrieve all tasks                   |
+| GET    | `/tasks/:id` | Get a task by ID                     |
+| POST   | `/tasks`     | Create a new task                    |
+| PUT    | `/tasks/:id` | Update a task (or create if missing) |
+| DELETE | `/tasks/:id` | Delete a task                        |
 
 ### Bidding System
 
-| Method | Endpoint           | Description                       |
-|--------|--------------------|---------------------------------|
-| PATCH  | `/tasks/:id`       | Place a bid on a task            |
+| Method | Endpoint     | Description           |
+| ------ | ------------ | --------------------- |
+| PATCH  | `/tasks/:id` | Place a bid on a task |
 
 - **Request body** must contain `{ "email": "user@example.com" }`
 - Prevents users from bidding on their own tasks
@@ -58,19 +58,17 @@ This server handles all task-related operations, including task creation, update
 
 ### Featured Tasks
 
-| Method | Endpoint           | Description                       |
-|--------|--------------------|---------------------------------|
-| GET    | `/featuredTasks`   | Retrieve top 6 tasks by earliest deadline |
+| Method | Endpoint         | Description                               |
+| ------ | ---------------- | ----------------------------------------- |
+| GET    | `/featuredTasks` | Retrieve top 6 tasks by earliest deadline |
 
 ### User-Specific Tasks
 
-| Method | Endpoint           | Description                       |
-|--------|--------------------|---------------------------------|
-| GET    | `/tasks/email/:email` | Get all tasks posted by a user  |
+| Method | Endpoint              | Description                    |
+| ------ | --------------------- | ------------------------------ |
+| GET    | `/tasks/email/:email` | Get all tasks posted by a user |
 
-
-
-# 🛠️ Getting Started 
+# 🛠️ Getting Started
 
 git clone https://github.com/SarfarazAkram17/TaskWave-Server.git <br />
 cd TaskWave-Server
