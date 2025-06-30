@@ -1,6 +1,6 @@
 # TaskWave Server
 
-Backend API for **TaskWave**, a dynamic courier task management platform.  
+Backend API for **TaskWave**, a dynamic Freelancing platform where Employer create task and freelancers bid on task etc.  
 This server handles all task-related operations, including task creation, updates, bidding logic, and user-specific task retrieval.
 
 ---
@@ -18,6 +18,7 @@ This server handles all task-related operations, including task creation, update
 ## 🔗 Related Links
 
 - **Client Repository:** [https://github.com/SarfarazAkram17/TaskWave-Client](https://github.com/SarfarazAkram17/TaskWave-Client)
+
 - **Live Client Site:** [https://assignment-10-sarfaraz-akram.netlify.app](https://assignment-10-sarfaraz-akram.netlify.app)
 
 ---
