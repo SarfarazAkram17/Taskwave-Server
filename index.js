@@ -18,8 +18,6 @@ const app = createApp({
     apiSecret: process.env.CLOUDINARY_API_SECRET,
   }),
   corsOrigin: process.env.CLIENT_ORIGIN
-    ? process.env.CLIENT_ORIGIN.split(",")
-    : undefined,
 });
 
 // Vercel imports the exported app; locally (or on any Node host) we listen.
